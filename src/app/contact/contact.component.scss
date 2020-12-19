@@ -1,0 +1,93 @@
+@media (max-width: 480px) {
+    :host {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) {
+    :host {
+        display: flex;
+        overflow: auto;
+        flex-grow: 1;
+    }
+    .background-contact {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        .contact-header {
+            display: flex;
+            margin-top: 40px;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            height: 20%;
+            h1 {
+                font-weight: bold;
+            }
+        }
+        .contact {
+            margin-top: 20px;
+            flex-grow: 1;
+            height: auto;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            img {
+                margin-top: 20px;
+                height: 100px;
+                width: 120px;
+            }
+            .follow {
+                margin-top: 50px;
+            }
+        }
+        .adress {
+            align-items: center;
+            margin-top: 80px;
+            margin-bottom: 80px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h1 {
+                font-weight: bold;
+            }
+            .position {
+                display: flex;
+                justify-content: center;
+                width: 90%;
+                height: 100%;
+                margin: 50px 50px 0 50px;
+                .infos {
+                    .from-perpi {
+                        height: 105%;
+                        width: 100%;
+                        margin-right: 10px;
+                        border: solid;
+                        border-radius: 10px;
+
+                    }
+                    .from-prades {
+                        margin-left: 10px;
+                        height: 105%;
+                        width: 100%;
+                        border: solid;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        .botnav {
+            margin-top: 70px;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            p {
+                font-size: 10px;
+                display: flex;
+                height: 100%;
+                align-items: center;
+                color: white;
+            }
+        }
+    }
+}

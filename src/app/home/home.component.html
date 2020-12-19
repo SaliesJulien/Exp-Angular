@@ -1,0 +1,29 @@
+<div class="background-page">
+    <div class="top-page">
+        <div class="title-page">
+            <div class="title-position">
+                <h1 class="title">{{ name }}</h1>
+                <h3>{{ subtitle }}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="presentation-home">
+        <h2>{{ competences }}</h2>
+        <div class="border-style">
+            <p class="presentation">
+                {{ presentation }}
+            </p>
+        </div>
+    </div>
+    <div class="experiences-home">
+        <h2>{{ experiences }}</h2>
+        <div class="border-style" *ngFor="let exp of about">
+            <li class="presentation">
+                {{ exp }}
+            </li>
+        </div>
+    </div>
+    <div class="botnav">
+        <p>Crée par Julien Salies</p>
+    </div>
+</div>
